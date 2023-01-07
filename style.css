@@ -83,6 +83,11 @@ a, button {
     padding-top: 20px;
 }
 
+.navbar {
+    width: 80%;
+    margin: auto;
+}
+
 .icon-bar {
     background-color: #162339;
 }
@@ -107,10 +112,10 @@ a, button {
     align-items: center;
     background-image: url(./img/agence-la-panthere.jpg);
     background-attachment: fixed;
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 /*///// article /////*//*///// article /////*/
@@ -141,7 +146,7 @@ a, button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -188,6 +193,18 @@ a, button {
 .heading-txt--white {
     color: #FFFF;
     text-shadow: 2px 2px #162339;
+}
+
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+
+.main--contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*///// footer /////*//*///// footer /////*//*///// footer /////*//*///// footer /////*//*///// footer /////*/
@@ -237,6 +254,10 @@ a, button {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+    .navbar {
+        width: 100%;
+        margin: 0%;
+    }
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
@@ -252,7 +273,7 @@ a, button {
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
+        background: #FFFF;
         text-align: left;
         padding-left: 15px;
         width: 100%;
