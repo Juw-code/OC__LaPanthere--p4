@@ -35,11 +35,11 @@
 	</script>
 </head>
 
-<body>
+<body class="body__pages--contact">
 	<!-- Principal conteneur -->
 	<div class="page-container">
 		<!-- header -->
-		<header class="header">
+		<header class="header header--contact">
 			<!-- nav header -->
 			<nav class="navbar">
 				<!-- navbar for mobile -->
@@ -51,7 +51,7 @@
 		<!-- main -->
 		<main class="main--contact">
 			<!-- aside -->
-			<aside class="">	
+			<aside>	
 				<h1 class="text-center txt--orange">Parlons web design !</h1>
 				<p class="text-center mg-lg txt--orange">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.
@@ -59,22 +59,22 @@
 				</p>
 			</aside>
 			<!-- section -->
-			<section class="col-sm-6">
+			<section class="col-sm-6 section__formContact">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label for="name">Nom</label>
+						<label for="name" class="txt--white">Nom</label>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label for="email">Adresse email</label>
+						<label for="email" class="txt--white">Adresse email</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label for="input_504">Comment nous avez-vous connu ?</label>
+						<label for="input_504" class="txt--white">Comment nous avez-vous connu ?</label>
 						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+						<label for="message" class="txt--white">Décrivez votre projet en ajoutant autant de détails que nécessaire !</label>
 						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-block" type="submit">
@@ -82,31 +82,25 @@
 					</button>
 				</form>
 			</section>
-			<!-- aside -->
-			<aside class="col-sm-6">
-				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi
-				</p>
-			</aside>
 		</main>
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="text-center">
-				<h4>Agence La Panthère,<br>agence web basée à Lyon.</h4>
-				<p>2 place Sathonay 69001 Lyon.<br>Ouvert de 9h à 18h, du lundi au vendredi.</p>
+				<h4 class="txt">Agence La Panthère une agence web design basée à Lyon.</h4>
+				<p>2 place Sathonay 69001 Lyon. Ouvert de 9h à 18h, du lundi au vendredi.</p>
 			</div>
 			<div class="footer__container--bottom">
 				<div>
-					<a href="#"><span class="fa fa-twitter icon-md btn--bleuDark"></span></a>
+					<a href="#"><span class="fa fa-twitter fa-2x btn--bleuDark"></span></a>
 				</div>
 				<div>
-					<a href="#"><span class="fa fa-facebook icon-md btn--bleuDark"></span></a>
+					<a href="#"><span class="fa fa-facebook fa-2x btn--bleuDark"></span></a>
 				</div>
 				<div>
-					<a href="#"><span class="fa fa-dribbble icon-md btn--bleuDark"></span></a>
+					<a href="#"><span class="fa fa-dribbble fa-2x btn--bleuDark"></span></a>
 				</div>
 				<div>
-					<a href="#"><span class="fa fa-instagram icon-md btn--bleuDark"></span></a>
+					<a href="#"><span class="fa fa-instagram fa-2x btn--bleuDark"></span></a>
 				</div>
 			</div>
 		</footer>

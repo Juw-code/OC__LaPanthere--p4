@@ -7,21 +7,25 @@ body {
     background: #FFFF;
 }
 
+.body__pages--contact{
+    background-color: #162339c5;
+}
+
 /*///// title /////*//*///// title /////*/
 
 h1 {
-    font-size: 2em;
+    font-size: 32px;
 }
 h2 { 
-    font-size: 1.375em;
+    font-size: 22px;
 }
 h3 {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: .940em;
+    font-size: 15px;
 }
 h4 {
-    font-size: .875em;
+    font-size: 14px;
 }
 
 h1, h2, h3, h4 {
@@ -29,7 +33,11 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-/*///// color txt /////*//*///// color txt /////*/
+/*///// txt /////*//*///// txt /////*/
+
+.txt {
+    font-weight: 400;
+}
 
 .txt--orange {
     color: #F3976C;
@@ -49,24 +57,28 @@ h1, h2, h3, h4 {
 /*///// btn /////*//*///// btn /////*//*///// btn /////*//*///// btn /////*//*///// btn /////*/
 
 .btn {
-    background: #F3976C;
     margin-top: 22px;
-    text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-}
-
-.btn:hover {
-    background: #c27956;
-    color: #FFFF;
-}
-
-.btn--txt{
-    color: #FFFF;
+    text-transform: uppercase;
+    background: #F3976C;
+    box-shadow: 0px 0px 4px #162339;
+    border-radius: 50px;
+    z-index: 2;
 }
 
 /*///// animation /////*//*///// animation /////*/
+
+.btn:hover {
+    background: #162339c5;
+    box-shadow: 0px 0px 6px #FFFF;
+}
+
+.btn:hover a {
+    text-decoration: none;
+    color: #FFFF;
+}
 
 a, button {
     transition: all .3s ease-in-out;
@@ -106,6 +118,7 @@ a, button {
 
 .aside--top {
     width: 100%; height: 430px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,13 +129,24 @@ a, button {
     -moz-background-size: auto;
     -o-background-size: auto;
     background-size: auto;
+    z-index: 2;
+}
+
+.aside--top img, .aside--top h1 {
+    z-index: 2;
+}
+
+.aside--top::after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    background-color: #162339c5;
 }
 
 /*///// article /////*//*///// article /////*/
 
 .article {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 50px 15px;
 }
 
 /*///// article top /////*//*///// article top /////*/
@@ -143,6 +167,7 @@ a, button {
 /*///// article middle /////*//*///// article middle /////*/
 
 .article--middle {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,17 +176,20 @@ a, button {
     background-size: cover;
 }
 
-.articleMiddle__container {
-    max-width: 600px;
-    margin: 80px 20px;
-    background-color: #162339;
-    padding: 40px 40px 40px 40px;
+.article--middle::after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    background-color: #162339c5;
 }
 
-.articleMiddle__link {
-    color: #FFFF;
-    font-weight: 900;
-    text-decoration: underline;
+.articleMiddle__container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
 }
 
 /*///// article bottom /////*//*///// article bottom /////*/
@@ -181,6 +209,7 @@ a, button {
 
 .asideBottom {
     width: 100%; height: 260px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,21 +219,16 @@ a, button {
     background-repeat: no-repeat;
 }
 
-.heading-txt--white {
-    color: #FFFF;
-    text-shadow: 2px 2px #162339;
+.asideBottom::after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    background-color: #162339c5;
 }
 
-/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
-/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
-/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
-/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
-
-.main--contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.heading-txt--white {
+    color: #F4AB89;
+    z-index: 2;
 }
 
 /*///// footer /////*//*///// footer /////*//*///// footer /////*//*///// footer /////*//*///// footer /////*/
@@ -219,7 +243,6 @@ a, button {
     justify-content:space-around;
     padding: 20px 0px;
     background-color: #F4AB89;
-    border: 4px solid #162339;
 }
 
 .footer__container--bottom {
@@ -232,6 +255,41 @@ a, button {
 .btn--bleuDark {
     color: #162339;
 }
+
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+/*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*//*///// for pages contact /////*/
+
+.main--contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--contact {
+    width: 30%;
+    margin: 40px 0px;
+    background-color: #FFFF;
+    box-shadow: 0px 0px 4px #162339;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.section__formContact {
+    width: 80%;
+    padding: 40px;
+}
+
+[type="submit"]:hover {
+    color: #FFFF;
+}
+
+.footer--contact {
+    height: auto;
+}
+
 
 /*///// média queries /////*//*///// média queries /////*//*///// média queries /////*//*///// média queries /////*//*///// média queries /////*/
 /*///// média queries /////*//*///// média queries /////*//*///// média queries /////*//*///// média queries /////*//*///// média queries /////*/
