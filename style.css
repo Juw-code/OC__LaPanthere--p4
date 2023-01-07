@@ -240,10 +240,11 @@ a, button {
     align-items: center;
     background-image: url(./img/agence-la-panthere.jpg);
     background-attachment: fixed;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
     z-index: 2;
 }
 
