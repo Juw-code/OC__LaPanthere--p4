@@ -303,6 +303,8 @@ a[data-lightbox]:hover img {
     padding: 20px 10px 40px 10px;
 }
 [type="submit"] {
+    width: 200px;
+    margin: auto;
     background-color: #F4AB89;
 }
 [type="submit"]:hover {
