@@ -86,7 +86,7 @@ a, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/agence-la-panthere.jpg);
+    background-image: url(./img/agence-la-panthere.webp);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -124,7 +124,7 @@ a, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -256,7 +256,7 @@ a[data-lightbox]:hover img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
