@@ -132,6 +132,7 @@ h1 {
 }
 h2 { 
     font-size: 22px;
+    z-index: 2;
 }
 h3 {
     margin-top: 10px;
@@ -179,9 +180,11 @@ h1, h2, h3, h4 {
     background: #F3976C;
     box-shadow: 0px 0px 4px #162339;
     border-radius: 50px;
-    z-index: 2;
 }
 
+.btn--link {
+    z-index: 2;
+}
 /*///// animation /////*//*///// animation /////*/
 
 .btn:hover {
@@ -189,7 +192,7 @@ h1, h2, h3, h4 {
     box-shadow: 0px 0px 6px #FFFF;
 }
 
-.btn:hover a {
+.btn--link:hover .btn{
     text-decoration: none;
     color: #FFFF;
 }
@@ -285,6 +288,7 @@ a, button {
 .article--middle {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("img/image-de-presentation.bmp");
@@ -299,8 +303,11 @@ a, button {
     background-color: #162339c5;
 }
 
-.articleMiddle__container {
+.article--middle h2, .articleMiddle__container {
     max-width: 600px;
+}
+
+.articleMiddle__container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -428,6 +435,12 @@ a, button {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    .navbar-brand {
+        padding-top: 10px;
+    }
+    .navbar-brand img {
+        max-width: 150px;
     }
     .navbar {
         width: 100%;
