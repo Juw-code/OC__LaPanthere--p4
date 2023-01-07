@@ -276,8 +276,11 @@ a[data-lightbox]:hover img {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    padding: 20px 0px;
+    padding: 40px 0px;
     background-color: #F4AB89;
+}
+.footer h2 {
+    font-size: 14px;
 }
 .footer__container--bottom {
     width: 100%;
