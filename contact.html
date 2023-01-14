@@ -9,13 +9,17 @@
 	<meta name="description" content="Contactez La Panthère est une agence de web design et de graphisme basée à Lyon qui propose des services de création de site internet. La meilleure agence design web de Lyon proposant un consultant seo expert en seo on page. En tant qu’agence de graphisme la panthère est spécialisé en design system.">
     <!-- link for CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 	<!-- Title tab -->
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
 	<title>La Panthère, contact</title>
+	<!-- import Javascript -->
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
     <!-- Google Search Console-->
 	<meta name="google-site-verification" content="eydBnzUTNRIUixL26Ns2NzByJrldbuZ0525vWO_ewvg">
 	<!-- Google tag (gtag.js) (Google Analytics) -->
@@ -33,27 +37,45 @@
 	<!-- Principal conteneur -->
 	<div class="page-container">
 		<!-- header -->
-		<header class="header" role="banner">
-			<!-- nav header -->
-			<nav class="navbar" role="navigation">
-				<!-- navbar for mobile -->
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html"><img class="img--header" src="img/agence-la-panthere-monochrome.svg" alt="La Panthère agence web design la meilleure agence basé à lyon experte en design systèm"></a>
-				</div>
-			</nav>
+		<header class="header">
+			<div class="header__container">
+				<a class="navbar-brand" href="index.html"><img class="img--header" src="img/agence-la-panthere-monochrome.svg" alt="logo  de l'agence web design La Panthère, la meilleure agence de creaction de site web basé à Lyon"></a>
+				<!-- nav header -->
+				<nav class="navbar">
+					<!-- navbar for mobile -->
+					<div class="navbar-header">
+						<div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</div>
+					</div>
+					<!-- navbar for desktop and tablet -->
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a class="txt--black" href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a class="txt--black" href="#portfolio">Portfolio</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<!-- main -->
-		<main class="main--contact" role="main">
+		<main class="main--contact">
 			<!-- aside -->
-			<aside class="aside__containerContact" role="complimentary">	
+			<aside class="aside__containerContact">	
 				<h1 class="text-center txt--orange">Parlons web design !</h1>
+			</aside>
+			<!-- section -->
+			<section class="col-sm-6 section__formContact">
 				<h2 class="text-center txt--orange txt--bold">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</h2>
-			</aside>
-			<!-- section -->
-			<section class="col-sm-6 section__formContact" role="region">
-				<form novalidate role="form">
+				<form novalidate>
 					<div class="form-group">
 						<label for="name" class="txt--white">Nom</label>
 						<input id="name" class="form-control" required placeholder="Votre nom : Durand, Buisson, ...">
@@ -70,14 +92,14 @@
 						<label for="message" class="txt--white">Décrivez votre projet en ajoutant autant de détails que nécessaire !</label>
 						<textarea id="message" class="form-control" rows="4" cols="50" required placeholder="Je souhaite créé un site web vitrine ! Je souhaite créé un site dynamique !"></textarea>
 					</div> 
-					<button class="bloc-button btn btn-block" type="submit" role="button">
+					<button class="bloc-button btn btn-block" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</section>
 		</main>
 		<!-- Footer -->
-		<footer class="footer" role="contentinfo">
+		<footer class="footer">
 			<h2 class="txt--bold text-center">Agence La Panthère une agence web design basée à Lyon.</h2>
 			<p class="text-center">2 place Sathonay 69001 Lyon. Ouvert de 9h à 18h, du lundi au vendredi.</p>
 			<div class="footer__container--bottom">

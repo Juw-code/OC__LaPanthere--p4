@@ -9,7 +9,7 @@
 	<meta name="description" content="La panthère est une agence de web design et de graphisme basée à Lyon qui propose des services de création de site internet. La meilleure agence design web de Lyon proposant un consultant seo expert en seo on page. En tant qu’agence de graphisme la panthère est spécialisé en design system.">
     <!-- link for CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
@@ -37,44 +37,49 @@
 	<!-- Principal conteneur -->
 	<div class="page-container">
 		<!-- header -->
-		<header class="header" role="banner">
-			<!-- nav header -->
-			<nav class="navbar" role="navigation">
-				<!-- navbar for mobile -->
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html"><img class="img--header" src="img/agence-la-panthere-monochrome.svg" alt="logo  de l'agence web design La Panthère, la meilleure agence de creaction de site web basé à Lyon"></a>
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1" role="button">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<!-- navbar for desktop and tablet -->
-				<div class="collapse navbar-collapse navbar-1">
-					<ul class="site-navigation nav navbar-nav">
-						<li>
-							<a class="txt--black" href="#portfolio">Portfolio</a>
-						</li>
-						<li>
-							<a class="txt--black" href="contact.html">Nous contacter</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+		<header class="header">
+			<div class="header__container">
+				<a class="navbar-brand" href="index.html"><img class="img--header" src="img/agence-la-panthere-monochrome.svg" alt="logo  de l'agence web design La Panthère, la meilleure agence de creaction de site web basé à Lyon"></a>
+				<!-- nav header -->
+				<nav class="navbar">
+					<!-- navbar for mobile -->
+					<div class="navbar-header">
+						<div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</div>
+					</div>
+					<!-- navbar for desktop and tablet -->
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a class="txt--black" href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a class="txt--black" href="#portfolio">Portfolio</a>
+							</li>
+							<li>
+								<a class="txt--black" href="contact.html">Nous contacter</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<!-- main -->
-		<main class="main" role="main">
+		<main class="main">
 			<!-- aside top -->
-			<aside class="aside--top" role="complimentary">
+			<aside class="aside--top">
 				<img src="img/logo.png" class="center-block image-resize-mode" alt="logo  de l'agence web design La Panthère, la meilleure agence de seo, seo expert seo one page basé à Lyon">
 				<h1 class="text-center txt--orange txt">Agence La Panthère</h1>
 				<a href="contact.html" class="txt--black btn btn--link">Contact</a>
 			</aside>
 			<!-- articles -->
-			<article class="article" role="article">
+			<article class="article">
 				<h2 class="text-center txt">L'agence La Panthère est une agence de web design qui aide<br>les entreprises à devenir attractives et visibles sur Internet.</h2>
 					<!-- section article -->
-					<section class=" articleTop__container" role="region">
+					<section class=" articleTop__container">
 						<div class="col-sm-4">
 							<div class="text-center">
 								<span class="et-icon-browser icon"></span>
@@ -99,9 +104,9 @@
 					</section>
 			</article>
 			<!-- article -->
-			<article class="article article--middle" role="article">
+			<article class="article article--middle">
 				<h2 class="text-center txt--orange txt--bold">Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès</h2>
-				<section class="articleMiddle__container" role="region">
+				<section class="articleMiddle__container">
 					<h3 class="text-center txt--orange txt--bold">Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients</h3>
 					<p class="txt--justify txt--white">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
 						<span class="text-center txt--white">seront facilement trouvable sur les moteurs de recherche.</span>
@@ -110,43 +115,43 @@
 				</section>
 			</article>
 			<!-- article -->
-			<article class="article article--bottom" id="portfolio" role="article">
+			<article class="article article--bottom" id="portfolio">
 				<h2 class="text-center txt--bold">Nous travaillons avec beaucoup de clients,<br>voici nos réalisations de sites web.</h2>
 				<!-- section article -->
-				<section class="container__portfolio" role="region">
+				<section class="container__portfolio">
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon" class="img-responsive"></a>
+						<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.webp" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon" class="img-responsive"></a>
 						<h3 class="text-center">Refonte d'un site web pour un journal local</h3>
 						<p class="text-center">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
 					</div>
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La panthère fait également ces illustrations"></a>
+						<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.webp" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La panthère fait également ces illustrations"></a>
 						<h3 class="text-center">Création d'un site web pour photographes</h3>
 						<p class="text-center">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
 					</div>
 				</section>
 				<!-- section article -->
-				<section class="container__portfolio" role="region">
+				<section class="container__portfolio">
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.jpg" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon"></a>
+						<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.webp" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon"></a>
 						<h3 class="text-center">Création d'un site internet pour un voyageur</h3>
 						<p class="text-center">Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
 					</div>
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.jpg" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon"></a>
+						<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Création d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.webp" class="img-responsive" alt="Photo d'une refonte de site web, de l'agence web design la panthère ! La meilleure agence web design basé à Lyon"></a>
 						<h3 class="text-center">Conception d'un site pour une agence de mariage</h3>
 						<p class="text-center">Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
 					</div>
 				</section>
 			</article>
 			<!-- aside bottom -->
-			<aside class="asideBottom" role="complimentary">
+			<aside class="asideBottom">
 				<h2 class="heading-txt--white text-center txt--bold">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</h2>
 				<a href="contact.html" class="txt--black btn btn--link">Contact</a>
 			</aside>
 		</main>
 		<!-- Footer -->
-		<footer class="footer" role="contentinfo">
+		<footer class="footer">
 			<h2 class="txt--bold text-center">Agence La Panthère une agence web design basée à Lyon.</h2>
 			<p class="text-center">2 place Sathonay 69001 Lyon. Ouvert de 9h à 18h, du lundi au vendredi.</p>
 			<div class="footer__container--bottom">

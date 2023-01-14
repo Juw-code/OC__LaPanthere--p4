@@ -2,7 +2,7 @@ body {
     background: #FFFF;
 }
 .body__pages--contact{
-    background-color: #162339c5;
+    background-color: #162339;
 }
 h1 {
     font-size: 32px;
@@ -73,6 +73,10 @@ a, button {
     padding-top: 20px;
     background-color: #FFFF;
 }
+.header__container {
+    max-width: 1200px;
+    margin: auto;
+}
 .navbar {
     width: 100%;
     margin: auto;
@@ -94,11 +98,8 @@ a, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/agence-la-panthere.jpg);
+    background-image: url(../img/agence-la-panthere.webp);
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
     z-index: 2;
@@ -132,7 +133,7 @@ a, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("../img/image-de-presentation.webp");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -185,11 +186,9 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
 #lightbox-modal {
@@ -271,7 +270,7 @@ a[data-lightbox]:hover img {
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("../img/agence-la-panthere.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -319,7 +318,7 @@ a[data-lightbox]:hover img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("../img/agence-la-panthere.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -357,9 +356,10 @@ a[data-lightbox]:hover img {
     .img--header {
         max-width: 120px;
     }
+    /*
     .navbar{
         margin: none;
-    }
+    }*/
     .nav > li {
         width: 100%;
         text-align: left;
@@ -382,6 +382,5 @@ a[data-lightbox]:hover img {
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
     }
 }
